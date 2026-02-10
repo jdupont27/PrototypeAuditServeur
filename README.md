@@ -32,6 +32,7 @@ Le développement a été structuré en deux phases de tests critiques :
 2. **Le Consultant Stratégique :** Responsable de la rédaction en français, assurant la transition entre la donnée brute et la recommandation d'affaires.
 
 #############################################################
+
 Outils à installer
 
 -Python 3.12
@@ -67,7 +68,8 @@ py -m pip install google-search-results
 pip install crewai crewai-tools pypdf
 
 #############################################################
-#Générer des rapports pour données tests (25 fichiers tests dans le répertoire "donnees_serveurs")
+
+Générer des rapports pour données tests (25 fichiers tests dans le répertoire "donnees_serveurs")
 python generer_rapports.py
 
 #Test 1 : Trouver le pire Indice d'Efficacite Energetique dans les 25 rapports de serveur.
