@@ -1,0 +1,26 @@
+**Rapport d'Analyse de Gap**
+==========================
+
+**Standard du Marché (Source Web)**
+---------------------------------
+
+* Standard PUE data center Canada 2026 : 1.2 [1]
+
+**Écart de Performance de notre Champion vs Marché**
+---------------------------------------------------
+
+* PUE du site avec le meilleur PUE : 1,1
+* Écart en pourcentage par rapport au standard du marché : (1.1 - 1.2) / 1.2 \* 100 % = -8,33 %
+* Notre champion est donc **en avance de 8,33%** par rapport au standard du marché.
+
+**Écart de Performance de notre Site avec le Pire PUE vs Marché**
+----------------------------------------------------------------
+
+* PUE du site avec le pire PUE : 1,79
+* Écart en pourcentage par rapport au standard du marché : (1.79 - 1.2) / 1.2 \* 100 % = 49,17 %
+* Notre site avec le pire PUE est donc **en retard de 49,17%** par rapport au standard du marché.
+
+En conclusion, notre champion est en avance de 8,33% par rapport au standard du marché, tandis que notre site avec le pire PUE est en retard de 49,17%. Il est donc nécessaire d'améliorer les performances de nos sites pour les mettre en conformité avec le standard du marché.
+
+Références :
+[1] Source web : Standard PUE data center Canada 2026.
