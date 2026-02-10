@@ -35,16 +35,10 @@ python -m venv venv
 ## Installation du modèle Llama 3.1 (8b)
 ollama pull llama3.1
 
-## Installation des bibliothèques CrewAI et outils de génération
-pip install crewai crewai-tools fpdf
+## Installation des bibliothèques  
+pip install "litellm>=1.0.0" "openai<2.0.0" "crewai[tools]" langchain-community fpdf2 pypdf PyPDF2 google-search-results
 
-## Installation des outils de communication et de recherche
-pip install langchain-community litellm google-search-results
-
-## Installation des outils de traitement PDF (RAG)
-pip install PyPDF2 pypdf
-
-📂 Préparation des données  
+## Préparation des données et exécution
 Étape 0 : Initialisation des données
 Générez les rapports pour les données de tests (si nécessaire) :  
 python generer_rapports.py
