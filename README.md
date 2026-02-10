@@ -28,47 +28,40 @@ Recherche Web : Clé d'API gratuite sur Serper.dev.
 Exécutez les commandes suivantes dans votre terminal :
 
 Bash
-# Création et activation de l'environnement virtuel
+## Création et activation de l'environnement virtuel
 python -m venv venv
 .\venv\Scripts\activate
 
-# Installation du modèle Llama 3.1 (8b)
+## Installation du modèle Llama 3.1 (8b)
 ollama pull llama3.1
 
-# Installation des bibliothèques CrewAI et outils de génération
+## Installation des bibliothèques CrewAI et outils de génération
 pip install crewai crewai-tools fpdf
 
-# Installation des outils de communication et de recherche
+## Installation des outils de communication et de recherche
 pip install langchain-community litellm google-search-results
 
-# Installation des outils de traitement PDF (RAG)
+## Installation des outils de traitement PDF (RAG)
 pip install PyPDF2 pypdf
-📂 Préparation des données
-Avant de lancer les analyses, assurez-vous d'avoir vos fichiers sources :
 
-Créez un dossier nommé donnees_serveurs/ à la racine du projet.
-
-Placez vos 25 fichiers PDF de tests à l'intérieur.
-
-🚀 Utilisation (Lignes de commande)
+📂 Préparation des données  
 Étape 0 : Initialisation des données
-Générez les rapports pour les données de tests (si nécessaire) :
-
-Bash
+Générez les rapports pour les données de tests (si nécessaire) :  
 python generer_rapports.py
-Étape 1 : Analyse simple (Trouver le pire PUE)
-Exécutez le premier test pour identifier le site le moins performant énergétiquement :
 
-Bash
+Étape 1 : Analyse simple (Trouver le pire PUE)
+Exécutez le premier test pour identifier le site le moins performant énergétiquement :  
 python agent_expert.py
+
 Étape 2 : Analyse d'écart (Gap Analysis) et Benchmark 2026
 Ce test identifie le meilleur et le pire site, effectue une recherche en ligne pour trouver les standards de 2026, et génère un rapport comparatif :
 
 Note : Assurez-vous d'avoir inséré votre clé Serper dans le script.
 
-Bash
 python agent_expert_Comparaison.py
-📊 Résultats attendus
+
+📊 Résultats attendus  
+
 À la fin de l'exécution du Test 2, le système génère un fichier :
 
 Rapport_Analyse_Ecart.txt : Un rapport narratif en français détaillant l'écart de performance entre vos infrastructures locales et le marché mondial.
