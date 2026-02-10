@@ -29,7 +29,7 @@ Exécutez les commandes suivantes dans votre terminal :
 
 Bash
 ## Création et activation de l'environnement virtuel
-python -m venv venv
+python -m venv venv  
 .\venv\Scripts\activate
 
 ## Installation du modèle Llama 3.1 (8b)
