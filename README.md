@@ -17,15 +17,11 @@ Valeur ajoutée : Transformer une pile de documents techniques indigestes en un 
 
 
 🛠️ Prérequis et Installation
-1. Environnement
+Environnement
 Python : version 3.12+
 
 Recherche Web : Clé d'API gratuite sur Serper.dev.
 
-2. Configuration de l'environnement
-Exécutez les commandes suivantes dans votre terminal :
-
-Bash
 ## Création et activation de l'environnement virtuel
 python -m venv venv  
 .\venv\Scripts\activate
