@@ -20,8 +20,6 @@ Valeur ajoutée : Transformer une pile de documents techniques indigestes en un 
 1. Environnement
 Python : version 3.12+
 
-Modèle local : Ollama installé et configuré.
-
 Recherche Web : Clé d'API gratuite sur Serper.dev.
 
 2. Configuration de l'environnement
