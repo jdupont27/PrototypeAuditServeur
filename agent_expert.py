@@ -35,7 +35,7 @@ def lire_contenu_pdf(nom_fichier: str):
 
 # 3. L'Agent
 analyste = Agent(
-    role='Expert Performance Vooban',
+    role='Expert Performance',
     goal='Extraire les scores PUE des rapports et trouver le pire.',
     backstory='Tu es un ingenieur systeme qui analyse des rapports PDF locaux.',
     tools=[lister_fichiers, lire_contenu_pdf],
@@ -62,3 +62,4 @@ mission = Task(
 crew = Crew(agents=[analyste], tasks=[mission])
 print("\n🚀 Analyse en cours...")
 print(crew.kickoff())
+
