@@ -6,8 +6,8 @@ Il démontre comment des agents autonomes peuvent traiter des volumes de donnée
 
 Objectif : Automatiser l'audit énergétique de 25 centres de données (data centers) à partir de rapports PDF bruts.
 Fonctionnement : Une équipe d'IA (Agents) extrait les indicateurs de performance, principalement le PUE (Power Usage Effectiveness) et la localisation.
-Analyse d'Écart (Gap Analysis) : Le système identifie le "Champion" (meilleur site) et l'"Alerte" (pire site) pour les comparer aux standards mondiaux prévus pour 2026.
-Valeur ajoutée : Transformer une pile de documents techniques indigestes en un rapport stratégique clair qui identifie immédiatement où les investissements d'optimisation sont nécessaires pour rester compétitif.
+Analyse d'Écart (Gap Analysis) : Le système identifie le "Champion" (meilleur site) et l'Alerte" (pire site) pour les comparer aux standards mondiaux prévus pour 2026.
+Valeur ajoutée : Transformer une pile de documents techniques en un rapport stratégique clair qui identifie immédiatement où les investissements d'optimisation sont nécessaires pour rester compétitif.
 
 ## 🚀 Technologies utilisées
 - **Framework :** CrewAI (Orchestration d'agents)
@@ -33,15 +33,15 @@ ollama pull llama3.1
 pip install "litellm>=1.0.0" "openai<2.0.0" "crewai[tools]" langchain-community fpdf2 pypdf PyPDF2 google-search-results
 
 ## Préparation des données et exécution
-Étape 0 : Initialisation des données
+Étape 0 : Initialisation des données  
 Générez les rapports pour les données de tests (si nécessaire) :  
 python generer_rapports.py
 
-Étape 1 : Analyse simple (Trouver le pire PUE)
+Étape 1 : Analyse simple (Trouver le pire PUE)  
 Exécutez le premier test pour identifier le site le moins performant énergétiquement :  
 python agent_expert.py
 
-Étape 2 : Analyse d'écart (Gap Analysis) et Benchmark 2026
+Étape 2 : Analyse d'écart (Gap Analysis) et Benchmark 2026  
 Ce test identifie le meilleur et le pire site, effectue une recherche en ligne pour trouver les standards de 2026, et génère un rapport comparatif :
 
 Note : Assurez-vous d'avoir inséré votre clé Serper dans le script.
