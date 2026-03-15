@@ -53,3 +53,6 @@ python agent_expert_Comparaison.py
 À la fin de l'exécution du Test 2, le système génère un fichier :
 
 Rapport_Analyse_Ecart.txt : Un rapport narratif en français détaillant l'écart de performance entre vos infrastructures locales et le marché mondial.
+
+## Roadmap
+Ajouter une interface graphique
