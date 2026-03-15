@@ -27,6 +27,7 @@ python -m venv venv
 .\venv\Scripts\activate
 
 ## Installation du modèle Llama 3.1 (8b)
+Installer l'exécutable Ollama (https://ollama.com/)
 ollama pull llama3.1
 
 ## Installation des bibliothèques  
